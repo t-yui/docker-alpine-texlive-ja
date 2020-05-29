@@ -29,4 +29,8 @@ RUN apk add --no-cache curl perl fontconfig-dev freetype-dev && \
 
 WORKDIR /workdir
 
+RUN mkdir /Applications && \
+    mkdir /tex_source && \
+    mkdir /images
+
 CMD ["sh"]
